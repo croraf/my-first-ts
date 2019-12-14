@@ -1,4 +1,3 @@
-/* import {getCurrentTime} from './util.js'; */
 
 const greeter = async (person: string) => {
   const {getCurrentTime} = await import('./util.js');
