@@ -1,9 +1,9 @@
 /* import {getCurrentTime} from './util.js'; */
 
 const greeter = async (person: string) => {
-  /* const util: any = await import('./util.js'); */
-  console.log('rafa');
-  const currentTime: number = 5;/* util.getCurrentTime(); */
+  const {getCurrentTime} = await import('./util.js');
+  console.log('util:', getCurrentTime);
+  const currentTime: number = getCurrentTime();
   return "Hello, " + person + ', ' + currentTime;
 }
 

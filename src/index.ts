@@ -2,8 +2,8 @@ import {greeter} from './greeter.js';
 
 const main = async () => {
   const user = 'Rafa';
-
-  document.title = await greeter(user);
+  console.log('main');
+  document.getElementById('root').textContent = await greeter(user);
 };
 
 main();
