@@ -1,5 +1,5 @@
 const getCurrentTime = (): number => {
-  return 5;
+  return 8;
 };
 
 export {getCurrentTime};
